@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9BF82B582B76A52F00E4DF90 /* DanFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BF82B572B76A52F00E4DF90 /* DanFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BF82B5F2B76A56600E4DF90 /* DanTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF82B5E2B76A56600E4DF90 /* DanTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9BF82B542B76A52F00E4DF90 /* DanFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DanFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF82B572B76A52F00E4DF90 /* DanFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DanFrameWork.h; sourceTree = "<group>"; };
+		9BF82B5E2B76A56600E4DF90 /* DanTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				9BF82B572B76A52F00E4DF90 /* DanFrameWork.h */,
+				9BF82B5E2B76A56600E4DF90 /* DanTest.swift */,
 			);
 			path = DanFrameWork;
 			sourceTree = "<group>";
@@ -93,6 +96,7 @@
 				TargetAttributes = {
 					9BF82B532B76A52F00E4DF90 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF82B5F2B76A56600E4DF90 /* DanTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +263,7 @@
 		9BF82B5C2B76A52F00E4DF90 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -269,6 +275,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -280,7 +287,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ekenya.rnd.ios.DanFrameWork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,6 +300,7 @@
 		9BF82B5D2B76A52F00E4DF90 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -300,6 +312,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +324,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ekenya.rnd.ios.DanFrameWork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
